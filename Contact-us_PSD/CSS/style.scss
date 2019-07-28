@@ -1,0 +1,428 @@
+$Montserrat: 'Montserrat', arial;
+$text-color: rgb(150, 146, 146);
+$text-color-for-footer:rgb(216, 206, 206);
+@mixin contacs {
+    :nth-child(1){
+        font-weight: 500;
+    }
+    :nth-child(2){
+        font-family: $Montserrat;
+        padding-left: 5px;
+        color: $text-color;
+    }
+}
+.container-fluid{
+    width: 100%;
+    max-width: 1170px;
+    background: url("../foto/fon.png");
+    height: auto;
+}
+header{
+    padding-top: 50px;
+    .row{
+        justify-content: space-between;
+        .col-lg-auto{
+            height: 100%;
+            height: 30px;
+            .menu{
+                list-style: none;
+                display: flex;
+                padding: 0;
+                padding-top: 6px;
+                height: 18px;
+                a{
+                    padding-left: 15px;
+                    font-family: $Montserrat;
+                    color: black;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+.main{
+    padding-top: 50px;
+    .col-lg-5{
+        .left-div{
+            .text{
+                width: 100%;
+                max-width: 350px;
+                font-family: $Montserrat;
+                color: $text-color;
+                padding-top: 20px;
+            }
+            .contacts{
+                .address{
+                   @include contacs;
+                   padding-top: 20px;
+                }
+                .phone{
+                    @include contacs;
+                    padding-top: 20px;
+                }
+                .email{
+                    @include contacs;
+                    padding-top: 20px;
+                }
+                .fax{
+                    @include contacs;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+    .col-lg-7{
+        .right-div{
+            display: flex;
+            justify-content: flex-end;
+            form{
+                width: 100%;
+                max-width: 670px;
+                .input__first-line{
+                    width: 100%;
+                    height: 50px;
+                    max-width: 332px;
+                    opacity: 0.5;
+                }
+                .input__second-line{
+                    width: 100%;
+                    height: 50px;
+                    opacity: 0.5;
+                     margin-top: 30px;
+                }
+                .coment{
+                    width: 100%;
+                    height: 100%;
+                    max-height: 190px;
+                    opacity: 0.5;
+                     margin-top: 30px;
+                }
+                button{
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    background: rgb(68, 218, 168);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+.grey-block{
+    padding-top: 120px;
+    .col-lg-12{
+        img{
+            max-width: 100%;
+            opacity: 0.5;
+        }
+    }
+}  
+footer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .row{
+        align-items: center;
+        .col-lg-12{
+            display: flex;
+            position: relative;
+            color: $text-color-for-footer;
+            .left-div{
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+               // max-width: 600px;
+                .first-element{
+                    display: flex;
+                    max-width: 232px;
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        :first-child{
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .second-element{
+                    display: flex;
+                    max-width: 123px;
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                    }
+                }
+            }
+            .right-div{
+                display: flex;
+                justify-content: space-around;
+                width: 50%;
+                .first-element{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    max-width: 300px;
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                    }
+                }
+                .second-element{
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .black-block{
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            // opacity: 0.7;
+            max-width: 1170px;
+            height: 160px;
+            background: #000;
+        }
+    }
+}
+@media screen and(max-width:992px){
+    .main{
+        padding-top: 50px;
+        .col-lg-5{
+            display: flex;
+            justify-content: center;
+            .left-div{
+                .title{
+                    text-align: center;
+                }
+                .text{
+                    width: 100%;
+                    max-width: 550px;
+                    font-family: $Montserrat;
+                    color: $text-color;
+                    padding-top: 20px;
+                    text-align: center;
+                }
+                .contacts{
+                    .address{
+                       @include contacs;
+                       padding-top: 20px;
+                       text-align: center;
+                    }
+                    .phone{
+                        @include contacs;
+                        padding-top: 20px;
+                        text-align: center;
+                    }
+                    .email{
+                        @include contacs;
+                        padding-top: 20px;
+                        text-align: center;
+                    }
+                    .fax{
+                        @include contacs;
+                        padding-top: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .col-lg-7{
+            .right-div{
+                display: flex;
+                justify-content: center;
+                form{
+                    width: 100%;
+                    height: auto;
+                    max-width: 670px;
+                    .input__first-line{
+                        width: 100%;
+                        height: 50px;
+                        max-width: 332px;
+                        opacity: 0.5;
+                    }
+                    .input__second-line{
+                        width: 100%;
+                        height: 50px;
+                        opacity: 0.5;
+                         margin-top: 30px;
+                    }
+                    .coment{
+                        width: 100%;
+                        height: 100%;
+                        max-height: 190px;
+                        opacity: 0.5;
+                         margin-top: 30px;
+                    }
+                    button{
+                        position: absolute;               /* 2 */
+                        left: 50%;                         /* 3 */
+                        transform: translate(-50%, 0);
+                        width: 150px;
+                        height: 40px;
+                        border: none;
+                        background: rgb(68, 218, 168);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    .grey-block{
+        padding-top: 220px;
+        .col-lg-12{
+            img{
+                max-width: 100%;
+                opacity: 0.5;
+            }
+        }
+    } 
+}
+@media screen and(max-width:768px){
+    .main{
+        padding-top: 50px;
+        .col-lg-5{
+            .left-div{
+                .text{
+                    width: 100%;
+                    max-width: 350px;
+                    font-family: $Montserrat;
+                    color: $text-color;
+                    padding-top: 20px;
+                }
+                .contacts{
+                    .address{
+                       @include contacs;
+                       padding-top: 20px;
+                    }
+                    .phone{
+                        @include contacs;
+                        padding-top: 20px;
+                    }
+                    .email{
+                        @include contacs;
+                        padding-top: 20px;
+                    }
+                    .fax{
+                        @include contacs;
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+        .col-lg-7{
+            .right-div{
+                display: flex;
+                justify-content: center;
+                form{
+                    width: 100%;
+                    max-width: 670px;
+                    :nth-child(2){
+                        margin-top: 30px;
+                    }
+                    .input__first-line{
+                        width: 100%;
+                        height: 50px;
+                        max-width: 100%;
+                        opacity: 0.5;
+                    }
+                    .input__second-line{
+                        width: 100%;
+                        height: 50px;
+                        opacity: 0.5;
+                         margin-top: 30px;
+                    }
+                    .coment{
+                        width: 100%;
+                        height: 100%;
+                        max-height: 190px;
+                        opacity: 0.5;
+                         margin-top: 30px;
+                    }
+                    button{
+                        width: 150px;
+                        height: 40px;
+                        border: none;
+                        background: rgb(68, 218, 168);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        .row{
+            align-items: center;
+            .col-lg-12{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                color: $text-color-for-footer;
+                .left-div{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    padding-top: 30px;
+                   // max-width: 600px;
+                    .first-element{
+                        display: flex;
+                        max-width: 232px;
+                        ul{
+                            list-style: none;
+                            padding: 0;
+                            :first-child{
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .second-element{
+                        display: flex;
+                        max-width: 123px;
+                        ul{
+                            list-style: none;
+                            padding: 0;
+                        }
+                    }
+                }
+                .right-div{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    padding-top: 30px;
+                    .first-element{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        max-width: 330px;
+                        ul{
+                            list-style: none;
+                            padding: 0;
+                        }
+                    }
+                    .second-element{
+                        ul{
+                            list-style: none;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .black-block{
+                position: absolute;
+                width: 100%;
+                z-index: -1;
+                // opacity: 0.7;
+                max-width: 1170px;
+                height: 230px;
+                background: #000;
+            }
+        }
+    }
+}
+
+        
+
+
