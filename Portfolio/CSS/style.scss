@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+
+body{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    background:#2e2e30;
+}
+.title{
+    font-size: 35px;
+    text-align: center;
+    color: #aaaaaa;
+    font-family: 'Comfortaa', cursive;
+}
+ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li{
+        padding: 15px;
+        list-style: none;
+        a{
+            font-family: 'Comfortaa', cursive;
+            text-decoration: none;
+            font-size: 20px;
+            color: #ebebeb;
+        }
+        a:hover{
+            color: #aaaaaa;
+        }
+    }
+}
