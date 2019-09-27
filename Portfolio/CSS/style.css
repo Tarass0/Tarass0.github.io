@@ -1,16 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
 body {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #2e2e30; }
 
 .title {
   font-size: 35px;
   text-align: center;
   color: #aaaaaa;
-  font-family: 'Comfortaa', cursive; }
+  font-family: 'Comfortaa', cursive;
+  margin-top: 50px; }
 
 ul {
   padding: 0;
