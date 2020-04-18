@@ -1,0 +1,322 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: azure; }
+
+header {
+  width: 100%;
+  min-height: 50px;
+  background: #575151;
+  display: flex;
+  justify-content: center; }
+  header .top-nav {
+    display: flex;
+    width: 90%; }
+    header .top-nav i {
+      font-size: 45px; }
+    header .top-nav .nav {
+      display: flex;
+      align-items: center; }
+      header .top-nav .nav .menu-trigger {
+        display: none;
+        text-decoration: none;
+        font-size: 30px;
+        color: #acaeaf; }
+      header .top-nav .nav ul {
+        list-style: none;
+        display: flex;
+        padding: 0; }
+        header .top-nav .nav ul a {
+          text-decoration: none;
+          padding-left: 30px;
+          font-size: 25px;
+          color: #acaeaf; }
+
+.main-div {
+  width: 90%;
+  display: flex; }
+  .main-div .left-div {
+    width: 70%; }
+    .main-div .left-div .portfolio {
+      display: flex; }
+      .main-div .left-div .portfolio .img {
+        padding-top: 5px;
+        width: 100%;
+        height: auto; }
+      .main-div .left-div .portfolio .portfolio__information {
+        padding-left: 35px; }
+        .main-div .left-div .portfolio .portfolio__information .title {
+          font-size: 35px;
+          font-weight: 600; }
+        .main-div .left-div .portfolio .portfolio__information .about-me {
+          width: 85%;
+          font-size: 20px;
+          color: rgba(167, 163, 163, 0.795); }
+          .main-div .left-div .portfolio .portfolio__information .about-me :first-child {
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px; }
+        .main-div .left-div .portfolio .portfolio__information .button {
+          padding-top: 15px; }
+          .main-div .left-div .portfolio .portfolio__information .button .bth {
+            width: 200px;
+            height: 50px;
+            border: 2px solid #e2740d;
+            border-radius: 5px;
+            text-transform: uppercase;
+            color: #e2740d;
+            font-family: Snell Roundhand, cursive;
+            font-weight: 600;
+            font-size: 20px; }
+            .main-div .left-div .portfolio .portfolio__information .button .bth:hover {
+              background: #e2740d;
+              color: white; }
+    .main-div .left-div .arrow {
+      margin-top: 50px; }
+      .main-div .left-div .arrow span {
+        display: block;
+        height: 5px;
+        width: 88%;
+        background: rgba(167, 163, 163, 0.795); }
+    .main-div .left-div .education {
+      width: 88%; }
+      .main-div .left-div .education .title {
+        font-size: 30px;
+        color: #e2740d;
+        font-weight: bold; }
+      .main-div .left-div .education .education__item {
+        margin-top: 40px; }
+        .main-div .left-div .education .education__item .institution {
+          display: flex;
+          justify-content: space-between; }
+          .main-div .left-div .education .education__item .institution .institution_name {
+            font-size: 20px;
+            font-weight: bold; }
+          .main-div .left-div .education .education__item .institution .period {
+            font-size: 20px;
+            color: grey; }
+        .main-div .left-div .education .education__item .about :first-child {
+          display: block;
+          padding-top: 10px;
+          font-size: 20px;
+          color: grey; }
+        .main-div .left-div .education .education__item .about :nth-child(2) {
+          display: block;
+          padding-top: 15px;
+          font-size: 17px;
+          color: #5c5858; }
+        .main-div .left-div .education .education__item .about :last-child {
+          display: block;
+          padding-top: 5px;
+          font-size: 17px;
+          color: #5c5858; }
+  .main-div .right-div {
+    width: 30%; }
+    .main-div .right-div .contacts {
+      margin-top: 50px; }
+      .main-div .right-div .contacts .title {
+        font-size: 25px;
+        font-weight: bold; }
+      .main-div .right-div .contacts ul {
+        list-style: none;
+        padding: 0;
+        font-size: 20px;
+        color: grey; }
+        .main-div .right-div .contacts ul li i {
+          padding-right: 20px;
+          padding-top: 15px; }
+    .main-div .right-div .skills .title {
+      font-size: 30px;
+      font-weight: bold; }
+    .main-div .right-div .skills .skills__item {
+      margin-top: 30px; }
+      .main-div .right-div .skills .skills__item .name {
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #292727; }
+      .main-div .right-div .skills .skills__item .level ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        color: #e07217; }
+        .main-div .right-div .skills .skills__item .level ul li {
+          padding-right: 8px; }
+      .main-div .right-div .skills .skills__item .about {
+        font-size: 19px;
+        color: #4d4848; }
+
+@media screen and (max-width: 992px) {
+  header {
+    width: 100%;
+    min-height: 50px;
+    background: #575151;
+    display: flex;
+    justify-content: center; }
+    header .top-nav {
+      display: flex;
+      width: 90%; }
+      header .top-nav i {
+        font-size: 45px; }
+      header .top-nav .nav {
+        display: block;
+        width: 100%;
+        text-align: right; }
+        header .top-nav .nav .menu-trigger {
+          display: block;
+          padding-top: 8px; }
+        header .top-nav .nav ul {
+          list-style: none;
+          display: none;
+          padding: 0;
+          text-align: center; }
+          header .top-nav .nav ul a {
+            text-decoration: none;
+            padding-left: 30px;
+            font-size: 25px;
+            color: #acaeaf; }
+
+  .main-div {
+    width: 90%;
+    display: flex; }
+    .main-div .left-div {
+      width: 70%; }
+      .main-div .left-div .portfolio {
+        display: block; }
+        .main-div .left-div .portfolio .img {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          height: auto; }
+        .main-div .left-div .portfolio .portfolio__information {
+          padding-left: 0; }
+          .main-div .left-div .portfolio .portfolio__information .title {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center; }
+          .main-div .left-div .portfolio .portfolio__information .about-me {
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            color: rgba(167, 163, 163, 0.795); }
+            .main-div .left-div .portfolio .portfolio__information .about-me :first-child {
+              display: block;
+              padding-top: 20px;
+              padding-bottom: 20px; }
+          .main-div .left-div .portfolio .portfolio__information .button {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 15px; }
+            .main-div .left-div .portfolio .portfolio__information .button .bth {
+              width: 200px;
+              height: 50px;
+              border: 2px solid #e2740d;
+              border-radius: 5px;
+              text-transform: uppercase;
+              color: #e2740d;
+              font-family: Snell Roundhand, cursive;
+              font-weight: 600;
+              font-size: 20px; }
+              .main-div .left-div .portfolio .portfolio__information .button .bth:hover {
+                background: #e2740d;
+                color: white; }
+    .main-div .right-div {
+      width: 30%; } }
+@media screen and (max-width: 778px) {
+  .main-div {
+    width: 100%;
+    display: block; }
+    .main-div .left-div {
+      width: 100%; }
+      .main-div .left-div .portfolio {
+        display: block; }
+        .main-div .left-div .portfolio .img {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          height: auto; }
+        .main-div .left-div .portfolio .portfolio__information {
+          padding-left: 0; }
+          .main-div .left-div .portfolio .portfolio__information .title {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center; }
+          .main-div .left-div .portfolio .portfolio__information .about-me {
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            color: rgba(167, 163, 163, 0.795); }
+            .main-div .left-div .portfolio .portfolio__information .about-me :first-child {
+              display: block;
+              padding-top: 20px;
+              padding-bottom: 20px; }
+          .main-div .left-div .portfolio .portfolio__information .button {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 15px; }
+            .main-div .left-div .portfolio .portfolio__information .button .bth {
+              width: 200px;
+              height: 50px;
+              border: 2px solid #e2740d;
+              border-radius: 5px;
+              text-transform: uppercase;
+              color: #e2740d;
+              font-family: Snell Roundhand, cursive;
+              font-weight: 600;
+              font-size: 20px; }
+              .main-div .left-div .portfolio .portfolio__information .button .bth:hover {
+                background: #e2740d;
+                color: white; }
+      .main-div .left-div .arrow {
+        margin-top: 50px; }
+        .main-div .left-div .arrow span {
+          display: block;
+          height: 5px;
+          width: 100%;
+          background: rgba(167, 163, 163, 0.795); }
+    .main-div .right-div {
+      width: 100%; }
+      .main-div .right-div .contacts {
+        margin-top: 40px; }
+        .main-div .right-div .contacts .title {
+          font-size: 25px;
+          font-weight: bold; }
+        .main-div .right-div .contacts ul {
+          list-style: none;
+          padding: 0;
+          font-size: 20px;
+          color: grey; }
+          .main-div .right-div .contacts ul li i {
+            padding-right: 20px;
+            padding-top: 15px; }
+      .main-div .right-div .skills .title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center; }
+      .main-div .right-div .skills .skills__item {
+        margin-top: 30px; }
+        .main-div .right-div .skills .skills__item .name {
+          font-size: 25px;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #292727;
+          text-align: center; }
+        .main-div .right-div .skills .skills__item .level {
+          width: 100%;
+          display: flex;
+          justify-content: center; }
+          .main-div .right-div .skills .skills__item .level ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            color: #e07217; }
+            .main-div .right-div .skills .skills__item .level ul li {
+              padding-right: 8px; }
+        .main-div .right-div .skills .skills__item .about {
+          font-size: 19px;
+          text-align: center;
+          color: #4d4848; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,442 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: azure;
+    //height: 100vh;
+}
+
+header {
+    width: 100%;
+    min-height: 50px;
+    background: rgb(87, 81, 81);
+    display: flex;
+    justify-content: center;
+
+    .top-nav {
+        display: flex;
+        width: 90%;
+
+        //background: rgb(194, 190, 190);
+        i {
+            font-size: 45px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            .menu-trigger{
+                display: none;
+                text-decoration: none;
+                font-size: 30px;
+                color: rgb(172, 174, 175);
+            }
+            ul {
+                list-style: none;
+                display: flex;
+                padding: 0;
+                a {
+                    text-decoration: none;
+                    padding-left: 30px;
+                    font-size: 25px;
+                    color: rgb(172, 174, 175);
+                }
+            }
+        }
+    }
+}
+
+.main-div {
+    width: 90%;
+    display: flex;
+    //background: red;
+    .left-div {
+        width: 70%;
+        //background: gold;
+        .portfolio {
+            display: flex;
+            .img{
+                padding-top: 5px;
+                width: 100%;
+                height: auto;
+            }
+            .portfolio__information {
+                padding-left: 35px;
+                // width: 100%;
+                .title {
+                    font-size: 35px;
+                    font-weight: 600;
+                }
+                .about-me {
+                    width: 85%;
+                    font-size: 20px;
+                    color: rgba(167, 163, 163, 0.795);
+                    :first-child {
+                        display: block;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+                .button {
+                    padding-top: 15px;
+                    .bth {
+                        width: 200px;
+                        height: 50px;
+                        border: 2px solid rgb(226, 116, 13);
+                        border-radius: 5px;
+                        text-transform: uppercase;
+                        color: rgb(226, 116, 13);
+                        font-family: Snell Roundhand, cursive;
+                        font-weight: 600;
+                        font-size: 20px;
+                        &:hover{
+                            background: rgb(226, 116, 13);
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+        .arrow{
+            margin-top: 50px;
+            span{
+                display: block;
+                height: 5px;
+                width: 88%;
+                background: rgba(167, 163, 163, 0.795);
+            }
+        }
+        .education{
+            width: 88%;
+            .title{
+                font-size: 30px;
+                color: rgb(226, 116, 13);
+                font-weight: bold;
+            }
+            .education__item{
+                margin-top: 40px;
+               .institution{
+                   display: flex;
+                   justify-content: space-between;
+                   .institution_name{
+                       font-size: 20px;
+                       font-weight: bold;
+                   }
+                   .period{
+                       font-size: 20px;
+                       color: grey;
+                   }
+               }
+               .about{
+                   :first-child{
+                       display: block;
+                       padding-top: 10px;
+                       font-size: 20px;
+                       color:grey;
+                   }
+                   :nth-child(2){
+                       display: block;
+                       padding-top: 15px;
+                       font-size: 17px;
+                       color:rgb(92, 88, 88);
+                   }
+                   :last-child{
+                       display: block;
+                       padding-top: 5px;
+                       font-size: 17px;
+                       color:rgb(92, 88, 88);
+                   }
+               }
+            }
+        }
+    }
+
+    .right-div {
+        width: 30%;
+        //background: rgb(101, 201, 43);
+        .contacts{
+            margin-top: 50px;
+            .title{
+                font-size: 25px;
+                font-weight: bold;  
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                font-size: 20px;
+                color: grey;
+                li{
+                    i{
+                        padding-right: 20px;
+                        padding-top: 15px;
+                    }
+                }
+            }
+        }
+        .skills{
+            .title{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .skills__item{
+                margin-top: 30px;
+                .name{
+                    font-size: 25px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: rgb(41, 39, 39);
+                }
+                .level{
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        color:rgb(224, 114, 23);
+                        li{
+                            padding-right: 8px;
+                        }
+                    }
+                }
+                .about{
+                    font-size: 19px;
+                    color: rgb(77, 72, 72);  
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:992px) {
+    header {
+        width: 100%;
+        min-height: 50px;
+        background: rgb(87, 81, 81);
+        display: flex;
+        justify-content: center;
+    
+        .top-nav {
+            display: flex;
+            width: 90%;
+            //background: rgb(194, 190, 190);
+            i {
+                font-size: 45px;
+            }
+            .nav {
+                display: block;
+                width: 100%;
+                text-align: right;
+                .menu-trigger{
+                    display: block;
+                    padding-top: 8px;
+                }
+                ul {
+                    list-style: none;
+                    display: none;
+                    padding: 0;
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                        padding-left: 30px;
+                        font-size: 25px;
+                        color: rgb(172, 174, 175);
+                    }
+                }
+            }
+        }
+    }
+   
+    .main-div {
+        width: 90%;
+        display: flex;
+        //background: red;
+        .left-div {
+            width: 70%;
+            //background: gold;
+            .portfolio {
+                display: block;
+                .img{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    height: auto;
+                }
+                .portfolio__information {
+                    padding-left: 0;
+                    // width: 100%;
+                    .title {
+                        font-size: 35px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                    .about-me {
+                        width: 100%;
+                        font-size: 20px;
+                        text-align: center;
+                        color: rgba(167, 163, 163, 0.795);
+                        :first-child {
+                            display: block;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                        }
+                    }
+                    .button {
+                        display: flex;
+                        justify-content: space-around;
+                        padding-top: 15px;
+                        .bth {
+                            width: 200px;
+                            height: 50px;
+                            border: 2px solid rgb(226, 116, 13);
+                            border-radius: 5px;
+                            text-transform: uppercase;
+                            color: rgb(226, 116, 13);
+                            font-family: Snell Roundhand, cursive;
+                            font-weight: 600;
+                            font-size: 20px;
+                            &:hover{
+                                background: rgb(226, 116, 13);
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .right-div {
+            width: 30%;
+            //background: rgb(224, 114, 23);
+        }
+    }
+    
+}
+@media screen and(max-width:778px) {
+    .main-div {
+        width: 100%;
+        display: block;
+        //background: red;
+        .left-div {
+            width: 100%;
+            //background: gold;
+            .portfolio {
+                display: block;
+                .img{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    height: auto;
+                }
+                .portfolio__information {
+                    padding-left: 0;
+                    // width: 100%;
+                    .title {
+                        font-size: 35px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                    .about-me {
+                        width: 100%;
+                        font-size: 20px;
+                        text-align: center;
+                        color: rgba(167, 163, 163, 0.795);
+                        :first-child {
+                            display: block;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                        }
+                    }
+                    .button {
+                        display: flex;
+                        justify-content: space-around;
+                        padding-top: 15px;
+                        .bth {
+                            width: 200px;
+                            height: 50px;
+                            border: 2px solid rgb(226, 116, 13);
+                            border-radius: 5px;
+                            text-transform: uppercase;
+                            color: rgb(226, 116, 13);
+                            font-family: Snell Roundhand, cursive;
+                            font-weight: 600;
+                            font-size: 20px;
+                            &:hover{
+                                background: rgb(226, 116, 13);
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+            .arrow{
+                margin-top: 50px;
+                span{
+                    display: block;
+                    height: 5px;
+                    width: 100%;
+                    background: rgba(167, 163, 163, 0.795);
+                }
+            }
+        }
+        .right-div {
+            width: 100%;
+            //background: rgb(101, 201, 43);
+            .contacts{
+                margin-top: 40px;
+                .title{
+                    font-size: 25px;
+                    font-weight: bold;  
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    font-size: 20px;
+                    color: grey;
+                    li{
+                        i{
+                            padding-right: 20px;
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+            .skills{
+                .title{
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .skills__item{
+                    margin-top: 30px;
+                    .name{
+                        font-size: 25px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        color: rgb(41, 39, 39);
+                        text-align: center;
+                    }
+                    .level{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        ul{
+                            list-style: none;
+                            padding: 0;
+                            display: flex;
+                            color:rgb(224, 114, 23);
+                            li{
+                                padding-right: 8px;
+                            }
+                        }
+                    }
+                    .about{
+                        font-size: 19px;
+                        text-align: center;
+                        color: rgb(77, 72, 72);  
+                    }
+                }
+            }
+        }
+    }
+    
+}

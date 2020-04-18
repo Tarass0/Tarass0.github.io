@@ -1,0 +1,88 @@
+body{
+    background-image: url(../foto/fon.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+.container{
+    width: 100%;
+    //max-width: 1300px;
+    //height: 100%;
+    //background: wheat;
+    padding-top: 60px; 
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        width: 100%;
+        text-align: center;
+        color: azure;
+        font-size: 30px;
+    }
+    .text{
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        color: rgb(181, 188, 194);
+    }
+}
+.portfolios{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    .portfolio-item{
+        // width: 100%;
+        // max-width: 232px;
+        width: 25%;
+        text-align: center; 
+        img{
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .title{
+            color: aliceblue; 
+        }
+        .text{
+            color: rgb(181, 188, 194);  
+        }
+    }
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    .bth{
+        width: 100%;
+        max-width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        background:linear-gradient(to right,rgb(27, 4, 49), rgb(124, 5, 124)); 
+        color: azure;
+        font-family: Snell Roundhand, cursive;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    .portfolios{
+        display: block;
+        padding-top: 0;
+        .portfolio-item{
+            width: 100%;
+            text-align: center;
+            padding-top: 40px; 
+            img{
+                max-width: 100%;
+                border-radius: 50%;
+            }
+            .title{
+                color: aliceblue; 
+            }
+            .text{
+                color: rgb(181, 188, 194);  
+            }
+        }
+    }
+}
